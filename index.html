@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+ 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">WELCOME</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#skills">Skills</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+
+
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Yousef Algaradi</h1>
+            <h2>Junior Web Developer</h2>
+            <a href="./Assets/Yousef Algaradi_Resume.docx" class="btn-rounded-white">Download Resume</a>
+        </div>
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I first experienced the love for web development when I created my first HTML and launched it to google chrome and when I saw the results I fell in love with web development. It was like magic on the computer you can change the appearance of text, create a clickable button, and even drag images around the screen. Web development is a fun, creative experience, and an enjoyable process that allows you to express yourself on the internet in a creative way. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <h3>Static Layout </h3>
+                    <p>
+                        Recreated a static website useing HTML & CSS
+                    </p>
+                    <a target="_blank" href="https://usef0197.github.io/staticLayout/">View Project</a>
+                    <div class="project-image">
+                        <img src="./Assets/StaticLayout.png"  class="center">
+                        
+                    </div>
+                
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <h3>CSS Creature</h3>
+                        <p>
+                            A CodePen creation using HTML and CSS.
+                        </p>
+                        <a target="_blank" href="https://codepen.io/usef0197/full/rNyPvzO">View Project</a>
+                    <div class="project-image">
+                        <img src="./Assets/CSSCreature.png" width= "1000" height= "480" clsss="CSSCreature">
+                    </div>
+                 
+                </div>
+
+                <div class="project shadow-large">
+                    <h3>API Project #1</h3>
+                    <p>
+                        Used fetch to pull data from an API and then used DOM manipulation to display the data from the API.
+                    </p>
+                    <a target="_blank" href="https://usef0197.github.io/API-Challenge/">View Project</a>
+                    <div class="project-image">
+                        <img src="./Assets/API1.png" width= "1000" height= "480" class="api1">
+                    </div>
+                 
+                </div>
+
+                <div class="project shadow-large">
+                    <h3>API Project #2</h3>
+                        <p>
+                            Used fetch to pull data from an API with the use of bootstrap and then used DOM manipulation to display the data from the API.
+                        </p>
+                        <a target="_blank" href="https://api2-2.web.app/">View Project</a>
+
+                    <div class="project-image">
+                        <img src="./Assets/API2.png" width= "1000" height= "480" class="api2">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>GIT</li>
+            <li>GitHub</li>
+            <li>Bootstrap </li>
+            
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="footer">
+      <div class="social"> 
+          <a target="_blank" href="https://github.com/usef0197"> <img src="./Assets/githublogo.png" class="githubl" alt="github logo"> </a>
+          <a target="_blank" href="https://www.linkedin.com/in/yousef-algaradi-378122187/"> <img src="./Assets/lilogo.png" class="lilogo" alt="lilogo"> </a>
+
+        </div>
+      </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2021 YOUSEF ALGARADI
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+ 
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+    </div>
+</body>
+  </body>
+</html>
